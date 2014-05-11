@@ -9,11 +9,33 @@ control, so I'm collecting them here as a public service.
 Share and Enjoy!
 
 MultiWii_Flip_NORMALQUADX
-    Flip 1.5, standard distribution
+-------------------------
+
+- Flip 1.5, standard distribution
 
 MultiWii_Flip_PPMSUM
-    Flip 1.5, with PPMSUM
+--------------------
+
+- Flip 1.5, with PPMSUM
+
+- Only diff is::
+
+    --- ./config.h
+    333c333
+    <       //#define SERIAL_SUM_PPM         PITCH,YAW,THROTTLE,ROLL,AUX1,AUX2,AUX3,AUX4,8,9,10,11 //For Graupner/Spektrum
+    ---
+    >       #define SERIAL_SUM_PPM         PITCH,YAW,THROTTLE,ROLL,AUX1,AUX2,AUX3,AUX4,8,9,10,11 //For Graupner/Spektrum
 
 MultiWii_pocket_V4
-    Now discontinued, HobbyKing PUMQ.  Is there a later version of
-    this anywhere on the internet?
+------------------
+
+- Now discontinued, HobbyKing PUMQ.  People were fiddling with this
+  on rcgroups for quite a while.  Is there a later version of
+  this anywhere on the Internet?
+
+BradWii
+-------
+
+- Thankfully, someone who tracks their code!  It's here:
+
+  https://github.com/bradquick/bradwii
