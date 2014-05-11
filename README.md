@@ -12,6 +12,7 @@ MultiWii_Flip_NORMALQUADX
 -------------------------
 
 - Flip 1.5, standard distribution
+- I think it's MW 2.3.  Uses MultiWii Config 2.3
 
 MultiWii_Flip_PPMSUM
 --------------------
@@ -20,11 +21,10 @@ MultiWii_Flip_PPMSUM
 
 - Only diff is::
 
-    --- ./config.h
+    ./config.h
     333c333
     <       //#define SERIAL_SUM_PPM         PITCH,YAW,THROTTLE,ROLL,AUX1,AUX2,AUX3,AUX4,8,9,10,11 //For Graupner/Spektrum
-    ---
-    >       #define SERIAL_SUM_PPM         PITCH,YAW,THROTTLE,ROLL,AUX1,AUX2,AUX3,AUX4,8,9,10,11 //For Graupner/Spektrum
+    >         #define SERIAL_SUM_PPM         PITCH,YAW,THROTTLE,ROLL,AUX1,AUX2,AUX3,AUX4,8,9,10,11 //For Graupner/Spektrum
 
 MultiWii_pocket_V4
 ------------------
